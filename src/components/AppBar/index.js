@@ -12,7 +12,7 @@ const Header = (props) => {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
         <div className={classes.AppLogoContainer}>
-          <Typography variant="h6" noWrap>
+          <Typography className={classes.introLogo} variant="h6" noWrap>
             {title}
           </Typography>
         </div>

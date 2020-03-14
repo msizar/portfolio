@@ -16,7 +16,7 @@ export default function ClippedDrawer() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar title="Themba Msiza">
+      <AppBar title="T.M">
         <div className={classes.AppNav}>
           <NavLink className={classes.AppLink} activeClassName={classes.activeAppLink} to="/" exact>About</NavLink>
           <NavLink className={classes.AppLink} activeClassName={classes.activeAppLink} to="/experience">Experience</NavLink>

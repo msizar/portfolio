@@ -34,6 +34,13 @@ const styles = makeStyles((theme) => ({
     alignItems: 'center',
   },
 
+  introLogo: {
+    borderRadius: '50%',
+    border: 'solid',
+    padding: '6px 6px',
+    fontWeight: '800',
+  },
+
 }));
 
 export default styles;
