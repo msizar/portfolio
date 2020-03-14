@@ -1,8 +1,10 @@
 import React from 'react';
+import Particles from 'react-particles-js';
 
+import ParticleConfig from '../../assets/constants/ParticleConfig';
+import picture from '../../assets/images/profile-themba-3.png';
 import Socials from '../Socials';
 import Avatar from '../Avatar';
-import picture from '../../assets/images/profile-themba-3.png';
 import styles from './styles';
 
 const ProfileWall = () => {
@@ -13,6 +15,11 @@ const ProfileWall = () => {
     <div
       className={classes.drawer}
     >
+      <div className={classes.particles}>
+        <Particles
+          params={ParticleConfig}
+        />
+      </div>
       <div className={classes.centered}>
 
         <Avatar

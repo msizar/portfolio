@@ -21,7 +21,7 @@ const styles = makeStyles((theme) => ({
 
   AppLogoContainer: {
     width: '50%',
-    backgroundColor: colors.backgroundColor,
+    background: colors.linearBackground,
     padding: 20,
     display: 'flex',
   },
