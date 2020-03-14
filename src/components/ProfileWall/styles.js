@@ -12,7 +12,7 @@ const styles = makeStyles((theme) => ({
   drawer: {
     width: '100%',
     flexShrink: 0,
-    backgroundColor: colors.backgroundColor,
+    background: colors.linearBackground,
     minHeight: '100vh',
 
 
@@ -32,6 +32,14 @@ const styles = makeStyles((theme) => ({
     marginTop: theme.spacing(30),
     textAlign: 'center',
     justifyContent: 'center',
+  },
+
+  particles: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    height: '100%',
   },
 
 }));
