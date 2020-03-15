@@ -2,24 +2,26 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import colors from '../../assets/styles/colors';
 
-
-const drawerWidth = '50%';
-
 const styles = makeStyles((theme) => ({
   root: {
     display: 'flex',
   },
 
-  drawer: {
-    backgroundColor: colors.backgroundColor,
-    width: drawerWidth,
-    flesmhrink: 0,
-
-    [theme.breakpoints.down('sm')]: {
-      width: 'unset',
-
-    },
+  app: {
+    textAlign: 'center',
+    height: '100%',
+    paddingTop: 75,
   },
+
+  title: {
+    color: colors.backgroundColor,
+  },
+
+  appBody: {
+    height: '100%',
+    overflow: 'auto',
+  },
+
 
   AppLink: {
     padding: '20px ',
@@ -37,36 +39,6 @@ const styles = makeStyles((theme) => ({
 
     },
   },
-
-  drawerPaper: {
-    width: drawerWidth,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    borderRight: 'unset',
-
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-    },
-  },
-
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
-
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      padding: 0,
-    },
-  },
-
-  activeAppLink: {
-    textDecoration: 'underline',
-
-  },
-
-
-  toolbar: theme.mixins.toolbar,
 }));
 
 export default styles;

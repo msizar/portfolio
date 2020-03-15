@@ -46,12 +46,6 @@ const styles = makeStyles((theme) => ({
     },
   },
 
-  introLogo: {
-    borderRadius: '50%',
-    border: 'solid',
-    padding: '6px 6px',
-    fontWeight: '800',
-  },
 
 }));
 

@@ -1,0 +1,25 @@
+
+.app-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: rgb(0, 0, 0) 0px 5px 20px -10px;
+  overflow: hidden;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.app-link:hover:not(.active) {
+  background-color: #000000;
+  border-bottom: solid 2px #fff;
+}
+
+.app-link.active {
+  border-bottom: solid 2px #fff;
+}
