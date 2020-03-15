@@ -13,8 +13,12 @@ const styles = makeStyles((theme) => ({
   drawer: {
     backgroundColor: colors.backgroundColor,
     width: drawerWidth,
-    flexShrink: 0,
+    flesmhrink: 0,
 
+    [theme.breakpoints.down('sm')]: {
+      width: 'unset',
+
+    },
   },
 
   AppLink: {
@@ -26,7 +30,10 @@ const styles = makeStyles((theme) => ({
     '&:hover': {
       textDecoration: 'underline',
       color: colors.backgroundColor,
+    },
 
+    [theme.breakpoints.down('sm')]: {
+      padding: '10px ',
 
     },
   },
@@ -37,11 +44,20 @@ const styles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     borderRight: 'unset',
+
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
   },
 
   content: {
     flexGrow: 1,
     padding: theme.spacing(3),
+
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      padding: 0,
+    },
   },
 
   activeAppLink: {

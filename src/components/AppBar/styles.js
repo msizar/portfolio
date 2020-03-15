@@ -6,8 +6,6 @@ const styles = makeStyles((theme) => ({
 
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: 'red',
-
   },
 
   toolbar: {
@@ -17,6 +15,11 @@ const styles = makeStyles((theme) => ({
     '-webkit-box-pack': 'justify',
     justifyContent: 'space-between',
     '-webkit-box-align': 'center',
+
+    [theme.breakpoints.down('sm')]: {
+      width: 'unset',
+      justifyContent: 'start',
+    },
   },
 
   AppLogoContainer: {
@@ -24,6 +27,11 @@ const styles = makeStyles((theme) => ({
     background: colors.linearBackground,
     padding: 20,
     display: 'flex',
+
+    [theme.breakpoints.down('sm')]: {
+      padding: 10,
+      width: 'unset',
+    },
   },
 
   navBar: {
@@ -32,6 +40,10 @@ const styles = makeStyles((theme) => ({
     backgroundColor: colors.whiteText,
     textAlign: 'center',
     alignItems: 'center',
+
+    [theme.breakpoints.down('sm')]: {
+      width: 'unset',
+    },
   },
 
   introLogo: {

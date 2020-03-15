@@ -15,10 +15,16 @@ const styles = makeStyles((theme) => ({
     background: colors.linearBackground,
     minHeight: '100vh',
 
-
+    [theme.breakpoints.down('sm')]: {
+    },
   },
+
   drawerPaper: {
     width: drawerWidth,
+
+    [theme.breakpoints.down('sm')]: {
+      width: 'unset',
+    },
   },
 
   introText: {
@@ -32,6 +38,10 @@ const styles = makeStyles((theme) => ({
     marginTop: theme.spacing(30),
     textAlign: 'center',
     justifyContent: 'center',
+
+    [theme.breakpoints.down('sm')]: {
+      marginTop: 120,
+    },
   },
 
   particles: {
@@ -40,6 +50,10 @@ const styles = makeStyles((theme) => ({
     justifyContent: 'center',
     position: 'absolute',
     height: '100%',
+
+    [theme.breakpoints.down('sm')]: {
+      height: '70%',
+    },
   },
 
 }));
