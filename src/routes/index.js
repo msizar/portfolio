@@ -7,7 +7,7 @@ import Experience from '../pages/Experience';
 import F0F from '../pages/404';
 
 const AppRoutes = () => (
-  <div>
+  <div className="main-content">
     <Route exact path="/" component={About} />
     <Route exact path="/about" component={About} />
     <Route exact path="/contact" component={Contact} />
@@ -15,6 +15,5 @@ const AppRoutes = () => (
     <Route exact path="/404" component={F0F} />
   </div>
 );
-
 
 export default AppRoutes;

@@ -30,10 +30,10 @@ const styles = makeStyles((theme) => ({
     width: '50%',
     background: colors.linearBackground,
     textAlign: 'initial',
-    padding: '20px',
+    padding: '30px 0px',
 
     [theme.breakpoints.down('sm')]: {
-      width: '14%',
+      width: '20%',
     },
   },
 
@@ -44,16 +44,19 @@ const styles = makeStyles((theme) => ({
     fontWeight: '800',
     color: colors.whiteText,
     fontSize: '20px',
+    marginLeft: '20px',
   },
 
   headerNavBox: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    height: '100%',
   },
 
   headerAppNav: {
     padding: '0',
+    width: '50%',
   },
 
 }));

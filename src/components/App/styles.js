@@ -10,18 +10,11 @@ const styles = makeStyles((theme) => ({
   app: {
     textAlign: 'center',
     height: '100%',
-    paddingTop: 75,
   },
 
   title: {
     color: colors.backgroundColor,
   },
-
-  appBody: {
-    height: '100%',
-    overflow: 'auto',
-  },
-
 
   AppLink: {
     padding: '20px ',

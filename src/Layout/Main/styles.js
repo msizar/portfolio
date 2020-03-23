@@ -2,42 +2,47 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import colors from '../../assets/styles/colors';
 
-
-const drawerWidth = '50%';
-
 const styles = makeStyles((theme) => ({
 
+  mainRoot: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    height: '100%',
+  },
 
-  drawer: {
-    backgroundColor: colors.backgroundColor,
-    width: drawerWidth,
-    flesmhrink: 0,
+  mainLeft: {
+    flexShrink: 0,
+    background: colors.linearBackground,
+    width: '50%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
 
     [theme.breakpoints.down('sm')]: {
       width: 'unset',
-
     },
   },
 
-  drawerPaper: {
-    width: drawerWidth,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    borderRight: 'unset',
-
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-    },
-  },
-
-  content: {
+  mainRight: {
     flexGrow: 1,
     padding: theme.spacing(3),
+    width: '50%',
 
     [theme.breakpoints.down('sm')]: {
       width: '100%',
       padding: 0,
+    },
+  },
+
+  particles: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    height: '100%',
+
+    [theme.breakpoints.down('sm')]: {
+      height: '70%',
     },
   },
 

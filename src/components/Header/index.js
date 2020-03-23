@@ -9,7 +9,6 @@ const Header = (props) => {
   const { navLinks, logo } = props;
   const classes = styles();
 
-
   return (
     <header className="app-header">
       <div className={classes.headerNavBox}>
@@ -29,7 +28,6 @@ const Header = (props) => {
               {link}
             </NavLink>
           )) }
-
         </div>
 
       </div>

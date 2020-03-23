@@ -4,6 +4,11 @@ html{
 
 #root {
   height: 100%;
+  padding-top: 80px;
+}
+
+.main-content {
+  height: 100%;
 }
 
 body {
