@@ -41,7 +41,7 @@ const TimeLine = (props) => {
         </div>
       </Typography>
 
-      <Stepper orientation="vertical" className={classes.stepper}>
+      <Stepper orientation="vertical" className={classes.timeLineStepper}>
         {EXPERIENCE_INFO.map((step, index) => (
           <Step
             data-aos="fade-up"

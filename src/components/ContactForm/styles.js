@@ -48,6 +48,11 @@ const styles = makeStyles((theme) => ({
   subTitle: {
     textAlign: 'center',
     padding: 20,
+
+    [theme.breakpoints.down('sm')]: {
+      textAlign: 'left',
+      padding: '20px 0px',
+    },
   },
 
   submitBtn: {
