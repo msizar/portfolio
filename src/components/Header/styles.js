@@ -33,7 +33,7 @@ const styles = makeStyles((theme) => ({
     padding: '30px 0px',
 
     [theme.breakpoints.down('sm')]: {
-      width: '20%',
+      width: '25%',
     },
   },
 
@@ -52,11 +52,19 @@ const styles = makeStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     height: '100%',
+
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: 'normal',
+    },
   },
 
   headerAppNav: {
     padding: '0',
     width: '50%',
+
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 5,
+    },
   },
 
 }));

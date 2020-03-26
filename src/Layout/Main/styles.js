@@ -8,15 +8,21 @@ const styles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-evenly',
     height: '100%',
+
+    [theme.breakpoints.down('sm')]: {
+      display: 'block',
+    },
   },
 
   mainLeft: {
     flexShrink: 0,
     background: colors.linearBackground,
     width: '50%',
+    height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    overflow: 'auto',
 
     [theme.breakpoints.down('sm')]: {
       width: 'unset',
@@ -25,24 +31,15 @@ const styles = makeStyles((theme) => ({
 
   mainRight: {
     flexGrow: 1,
-    padding: theme.spacing(3),
     width: '50%',
-
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      padding: 0,
-    },
-  },
-
-  particles: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
     height: '100%',
+    overflow: 'auto',
 
     [theme.breakpoints.down('sm')]: {
-      height: '70%',
+      width: 'unset',
+      padding: 0,
+      overflow: 'unset',
+
     },
   },
 

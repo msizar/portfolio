@@ -1,44 +1,53 @@
 const ParticleConfig = {
   particles: {
     number: {
-      value: 600,
+      value: 80,
       density: {
-        enable: true,
-        value_area: 1500,
+        enable: false,
+      },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        speed: 1,
+        size_min: 0.3,
       },
     },
     line_linked: {
-      enable: true,
-      opacity: 0.04,
+      enable: false,
     },
     move: {
+      random: true,
       speed: 1,
-    },
-    size: {
-      value: 1,
-    },
-    opacity: {
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.1,
-      },
+      direction: 'top',
+      out_mode: 'out',
     },
   },
   interactivity: {
     events: {
+      onhover: {
+        enable: true,
+        mode: 'bubble',
+      },
       onclick: {
         enable: true,
-        mode: 'push',
+        mode: 'repulse',
       },
     },
     modes: {
-      push: {
-        particles_nb: 4,
+      bubble: {
+        distance: 250,
+        duration: 2,
+        size: 0,
+        opacity: 0,
+      },
+      repulse: {
+        distance: 400,
+        duration: 4,
       },
     },
   },
-  retina_detect: true,
 };
 
 export default ParticleConfig;

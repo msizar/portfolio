@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Particles from 'react-particles-js';
 
 import ProfileWall from '../../components/ProfileWall';
-import ParticleConfig from '../../assets/constants/ParticleConfig';
 import styles from './styles';
 
 const Main = ({ children }) => {
@@ -12,11 +10,6 @@ const Main = ({ children }) => {
   return (
     <div className={classes.mainRoot}>
       <div className={classes.mainLeft}>
-        <div className={classes.particles}>
-          <Particles
-            params={ParticleConfig}
-          />
-        </div>
         <ProfileWall />
       </div>
 

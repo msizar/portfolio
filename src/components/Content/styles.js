@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import colors from '../../assets/styles/colors';
 
 const styles = makeStyles((theme) => ({
-  root: {
+  contentRoot: {
     padding: theme.spacing(5, 5),
     boxShadow: 'unset',
   },
@@ -19,8 +19,8 @@ const styles = makeStyles((theme) => ({
     backgroundColor: colors.backgroundColor,
   },
 
-  moreText: {
-    marginTop: 20,
+  contentMoreText: {
+    marginTop: 30,
   },
 }));
 
