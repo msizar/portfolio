@@ -9,6 +9,8 @@ html{
 
 .main-content {
   height: 100%;
+  text-align: left;
+  overflow: auto;
 }
 
 body {
@@ -20,6 +22,45 @@ body {
   height: 100%;
   overflow: hidden;
   
+}
+
+@media only screen and (max-width: 600px) {
+
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+    opacity: unset !important; 
+    transition-property: unset;
+  } 
+
+  html:not(.no-js) [data-aos=fade-right] {
+    transform: unset !important;
+  }
+
+  html:not(.no-js) [data-aos=fade-up] {
+    transform: unset !important;
+  }
+
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 code {
