@@ -3,7 +3,6 @@ import colors from '../../assets/styles/colors';
 
 const styles = makeStyles((theme) => ({
 
-
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
   },
@@ -45,14 +44,6 @@ const styles = makeStyles((theme) => ({
       width: 'unset',
     },
   },
-
-  introLogo: {
-    borderRadius: '50%',
-    border: 'solid',
-    padding: '6px 6px',
-    fontWeight: '800',
-  },
-
 }));
 
 export default styles;

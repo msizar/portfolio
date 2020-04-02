@@ -5,6 +5,7 @@ import LoadingCircle from '../../components/LoadingCircle';
 import SuccessState from '../../components/SuccessState';
 import ContactForm from '../../components/ContactForm';
 import mailProvider from '../../providers/mail';
+import Main from '../../Layout/Main';
 
 
 class Contact extends Component {
@@ -67,26 +68,28 @@ class Contact extends Component {
 
    render() {
      const { response, error, loading } = this.state;
-     return (
-       <div>
-         {loading ? <LoadingCircle />
-           : (
-             <div>
-               { response && !error
-                 ? <SuccessState status={response} />
-                 : (
-                   <ContactForm
-                     title="Contact Me"
-                     error={error}
-                     description={CONTACT_ME.description}
-                     handleSubmit={this.submit}
-                     handleChange={this.onChange}
-                   />
-                 )}
-             </div>
-           )}
 
-       </div>
+     return (
+       <Main hide>
+         <div>
+           {loading ? <LoadingCircle />
+             : (
+               <div>
+                 { response && !error
+                   ? <SuccessState status={response} />
+                   : (
+                     <ContactForm
+                       title="Contact Me"
+                       error={error}
+                       description={CONTACT_ME.description}
+                       handleSubmit={this.submit}
+                       handleChange={this.onChange}
+                     />
+                   )}
+               </div>
+             )}
+         </div>
+       </Main>
      );
    }
 }

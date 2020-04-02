@@ -14,7 +14,7 @@ const Content = (props) => {
 
   return (
     <div>
-      <Paper className={classes.root}>
+      <Paper className={classes.contentRoot}>
         <Typography
           className={classes.title}
           variant="h6"
@@ -38,7 +38,7 @@ const Content = (props) => {
 
 
         <div
-          className={classes.moreText}
+          className={classes.contentMoreText}
           data-aos="fade-up"
           data-aos-offset={90}
           data-aos-delay={45}
@@ -59,8 +59,6 @@ const Content = (props) => {
         >
           <DetailsCard subHeader="PERSONAL DETAILS " />
         </div>
-
-
       </Paper>
     </div>
   );

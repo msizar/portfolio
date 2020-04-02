@@ -20,9 +20,13 @@ const styles = makeStyles((theme) => ({
     padding: 5,
   },
 
-  stepper: {
+  timeLineStepper: {
     background: 'unset',
     padding: '40px 10px',
+
+    [theme.breakpoints.down('sm')]: {
+      padding: '40px 0px',
+    },
   },
 
   title: {

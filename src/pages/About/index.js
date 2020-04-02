@@ -1,6 +1,6 @@
 import React from 'react';
 import Content from '../../components/Content';
-
+import Main from '../../Layout/Main';
 
 const About = () => {
   const aboutMe = `Experienced Software Engineer with a demonstrated history of working in the 
@@ -10,9 +10,9 @@ const About = () => {
                     from University of Johannesburg. `;
 
   return (
-    <div>
+    <Main>
       <Content title="About" moreText={aboutMe} />
-    </div>
+    </Main>
   );
 };
 
