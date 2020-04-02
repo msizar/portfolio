@@ -7,6 +7,7 @@ const styles = makeStyles((theme) => ({
   wallDrawer: {
     width: 'fit-content',
     height: 600,
+    textAlign: 'center',
 
     [theme.breakpoints.down('sm')]: {
       height: 540,
@@ -21,7 +22,6 @@ const styles = makeStyles((theme) => ({
 
   particles: {
     position: 'absolute',
-    width: '50%',
     left: 0,
 
     [theme.breakpoints.down('sm')]: {

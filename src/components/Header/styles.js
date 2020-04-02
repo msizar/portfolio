@@ -4,6 +4,19 @@ import colors from '../../assets/styles/colors';
 
 const styles = makeStyles((theme) => ({
 
+  AppHeader: {
+    position: 'fixed',
+    top: '0px',
+    width: '100%',
+    zIndex: '10',
+    boxShadow: 'rgb(0, 0, 0) 0px 5px 20px -10px',
+    overflow: 'hidden',
+    fontSize: '15px',
+    fontFamily: 'inherit',
+    height: '80px',
+    background: 'white',
+  },
+
   AppLink: {
     padding: '20px ',
     color: colors.backgroundColor,

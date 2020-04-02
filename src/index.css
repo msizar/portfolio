@@ -24,6 +24,11 @@ body {
   
 }
 
+
+a {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
 
   html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
@@ -37,6 +42,15 @@ body {
 
   html:not(.no-js) [data-aos=fade-up] {
     transform: unset !important;
+  }
+
+  .main-content {
+    height: unset;
+    overflow: hidden; 
+  }
+
+  body {
+    overflow: auto;
   }
 
 }

@@ -12,7 +12,7 @@ const ContactForm = (props) => {
   } = props;
   const classes = styles();
   return (
-    <Paper className={classes.root}>
+    <Paper className={classes.contactFormRoot}>
       <Typography
         className={classes.title}
         variant="h6"

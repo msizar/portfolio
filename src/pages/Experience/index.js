@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import TIMELINE_STEPS, { EXPERIENCE_INFO } from '../../assets/constants/experience';
 import TimeLine from '../../components/TimeLine';
+import Main from '../../Layout/Main';
 
 
 class Experience extends Component {
@@ -36,7 +37,7 @@ getStepContent = (step) => EXPERIENCE_INFO[step]
      const { activeSteps } = this.state;
 
      return (
-       <div>
+       <Main hide>
          <TimeLine
            steps={steps}
            activeSteps={activeSteps}
@@ -44,7 +45,8 @@ getStepContent = (step) => EXPERIENCE_INFO[step]
            getStepContent={this.getStepContent}
            title="Experience"
          />
-       </div>
+       </Main>
+
      );
    }
 }

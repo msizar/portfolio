@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import colors from '../../assets/styles/colors';
 
 const styles = makeStyles((theme) => ({
-  root: {
+  contactFormRoot: {
     padding: theme.spacing(5, 5),
     boxShadow: 'unset',
   },
@@ -12,7 +12,6 @@ const styles = makeStyles((theme) => ({
     textTransform: 'uppercase',
     width: 'fit-content',
   },
-
 
   textField: {
     margin: theme.spacing(1, 0),

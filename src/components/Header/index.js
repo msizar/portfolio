@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
 
 import styles from './styles';
-import './header.css';
 
 const Header = (props) => {
   const { navLinks, logo } = props;
   const classes = styles();
 
   return (
-    <header className="app-header">
+    <header className={classes.AppHeader}>
       <div className={classes.headerNavBox}>
         <div className={classes.headerLogoContainer}>
           <Link className={classes.headerLogo} to="/">{logo}</Link>

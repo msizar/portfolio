@@ -15,6 +15,7 @@ const styles = makeStyles((theme) => ({
   },
 
   mainLeft: {
+    position: 'relative',
     flexShrink: 0,
     background: colors.linearBackground,
     width: '50%',
@@ -26,6 +27,8 @@ const styles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('sm')]: {
       width: 'unset',
+      overflow: 'hidden',
+      height: '100vh',
     },
   },
 
@@ -38,7 +41,8 @@ const styles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       width: 'unset',
       padding: 0,
-      overflow: 'unset',
+      height: 'unset',
+      overflow: 'hidden',
 
     },
   },
