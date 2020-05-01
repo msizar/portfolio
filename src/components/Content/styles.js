@@ -21,6 +21,7 @@ const styles = makeStyles((theme) => ({
 
   contentMoreText: {
     textAlign: 'left',
+    marginTop: '20px',
   },
 }));
 
