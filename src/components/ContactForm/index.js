@@ -51,6 +51,7 @@ const ContactForm = (props) => {
         data-aos-delay={47}
         data-aos-duration={1000}
         data-aos-anchor-placement="top-bottom"
+        netlify
         onSubmit={handleSubmit}
 
       >
@@ -87,7 +88,7 @@ const ContactForm = (props) => {
         <div
           className={classes.submitBtn}
         >
-          <Buttons type="submit" handleClick={() => {}}>Submit</Buttons>
+          <Buttons type="submit">Submit</Buttons>
         </div>
 
       </form>

@@ -4,7 +4,6 @@ import { CONTACT_ME } from '../../assets/constants/experience';
 import LoadingCircle from '../../components/LoadingCircle';
 import SuccessState from '../../components/SuccessState';
 import ContactForm from '../../components/ContactForm';
-import mailProvider from '../../providers/mail';
 import Main from '../../Layout/Main';
 
 
@@ -18,25 +17,28 @@ class Contact extends Component {
       error: null,
       loading: false,
     };
+
+    this.submit = this.submit.bind(this);
+    this.encode = this.encode.bind(this);
   }
+
+
+  encode = (data) => Object.keys(data)
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
 
 
   submit = async (event) => {
     const { values } = this.state;
     event.preventDefault();
 
-    const url = '/api/email';
-    this.setState({ loading: true });
-    mailProvider.sendMail({
-      url, payload: values, handleError: this.handleError, handleResponse: this.handleResponse,
-    });
-    // fetch('/', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //   body: this.encode({ 'form-name': 'contact', ...values }),
-    // })
-    //   .then((response) => this.handleResponse(response))
-    //   .catch((error) => this.handleError(error));
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contact', ...values }),
+    })
+      .then(() => this.setState({ response: 'Success!', error: false, loading: false }))
+      .catch((error) => this.setState({ response: false, error, loading: false }));
   }
 
 
