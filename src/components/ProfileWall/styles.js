@@ -21,6 +21,7 @@ const styles = makeStyles((theme) => ({
   },
 
   particles: {
+    display: 'none',
     position: 'absolute',
     left: 0,
 
