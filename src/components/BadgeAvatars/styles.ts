@@ -17,8 +17,10 @@ const styles = makeStyles((theme: Theme) =>
 
     badge: {
       backgroundColor: '#44b700',
-      color: '#44b700',
+      color: colors.white,
       boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
+      cursor: 'pointer',
+      padding: '2px',
       '&::after': {
         position: 'absolute',
         top: 0,
@@ -26,8 +28,9 @@ const styles = makeStyles((theme: Theme) =>
         width: '100%',
         height: '100%',
         borderRadius: '50%',
+
         animation: '$ripple 1.2s infinite ease-in-out',
-        border: '2px solid currentColor',
+        border: '2px solid #44b700',
         content: '""',
       },
     },
@@ -50,7 +53,7 @@ const styles = makeStyles((theme: Theme) =>
 
     avatar: {
       width: theme.spacing(25),
-      height: theme.spacing(22),
+      height: theme.spacing(25),
       fontSize: '2.5em',
       fontWeight: 600,
       border: `solid ${colors.darkRed}`,

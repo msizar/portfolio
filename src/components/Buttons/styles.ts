@@ -25,11 +25,13 @@ const styles = makeStyles((theme) => ({
 
     '&:hover': {
       borderColor: colors.secondary,
+      textDecoration: 'underline',
     },
   },
 
   secondaryButtonActive: {
     borderColor: colors.secondary,
+    textDecoration: 'underline',
   },
 
   linkButton: {

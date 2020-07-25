@@ -9,6 +9,11 @@ export const Title = ({ children }: Props) => {
   return <h2 className={classes.title}>{children}</h2>;
 };
 
+export const SubTitle = ({ children }: Props) => {
+  const classes = useStyles();
+  return <h2 className={classes.subTitle}>{children}</h2>;
+};
+
 export const Heading = ({ children }: Props) => {
   const classes = useStyles();
   return <h1 className={classes.heading}>{children}</h1>;

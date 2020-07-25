@@ -11,10 +11,13 @@ const styles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
       alignItems: 'center',
       padding: '0px',
+      marginTop: '2em',
       height: '100%',
       flexDirection: 'column',
 
-      [theme.breakpoints.up('md')]: {},
+      [theme.breakpoints.up('md')]: {
+        marginTop: '3em',
+      },
     },
 
     heading: {

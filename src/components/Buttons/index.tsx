@@ -36,12 +36,11 @@ const Buttons = ({
           fullWidth
           variant="outlined"
           type={type}
+          href={link}
           component={component}
           disabled={disabled}
         >
-          <Link color="inherit" href={link}>
-            {children}
-          </Link>
+          {children}
         </Button>
       );
 

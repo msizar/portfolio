@@ -2,7 +2,7 @@ import React from 'react';
 import CardContent from '@material-ui/core/CardContent';
 
 import useStyles from './styles';
-import { Text, Heading } from '../Typography';
+import { Text, Title } from '../Typography';
 
 type Props = {
   children: string;
@@ -17,7 +17,7 @@ const AboutMeRoot: React.FC<Props> = ({ children, title }) => {
       <div className={classes.root}>
         <div className={classes.details}>
           <CardContent className={classes.content}>
-            <Heading>{title}</Heading>
+            <Title>{title}</Title>
             <div className={classes.aboutMeRootText}>
               <Text>{children}</Text>
             </div>

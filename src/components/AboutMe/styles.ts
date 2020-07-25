@@ -20,24 +20,27 @@ const styles = makeStyles((theme: Theme) =>
     root: {
       display: 'flex',
       justifyContent: 'space-around',
-      padding: '3em 20px',
+      padding: '2em 0',
+      marginTop: '2em',
       maxWidth: '1140px',
       boxShadow: 'unset',
       margin: 'auto',
       flexDirection: 'column-reverse',
 
       [theme.breakpoints.up('md')]: {
+        marginTop: '5em',
         flexDirection: 'initial',
-        padding: '5em 20px',
       },
     },
     details: {
       display: 'flex',
       flexDirection: 'column',
       width: '100%',
+      padding: '0px 20px',
 
       [theme.breakpoints.up('md')]: {
         width: '95%',
+        padding: 'unset',
       },
     },
     content: {

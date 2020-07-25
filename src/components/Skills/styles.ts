@@ -21,7 +21,7 @@ const styles = makeStyles((theme: Theme) =>
     skillGrid: {
       maxWidth: '100%',
       justifyContent: 'center',
-      margin: '10px',
+      margin: '3em 10px',
 
       [theme.breakpoints.up('md')]: {
         display: 'flex',

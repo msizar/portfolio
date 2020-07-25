@@ -4,6 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import profileImg from '../../assets/images/profileImg.png';
 
 import useStyles from './styles';
+import { CV_LINK } from '../../constants/links';
 
 const BadgeAvatars = () => {
   const classes = useStyles();
@@ -16,8 +17,11 @@ const BadgeAvatars = () => {
           vertical: 'bottom',
           horizontal: 'right',
         }}
-        variant="dot"
+        badgeContent={'CV'}
         classes={{ badge: classes.badge, dot: classes.dot }}
+        onClick={() => {
+          window.location.assign(CV_LINK);
+        }}
       >
         <Avatar
           alt="Themba Msiza"

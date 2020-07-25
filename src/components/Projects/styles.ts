@@ -21,7 +21,7 @@ const styles = makeStyles((theme: Theme) =>
     projectGrid: {
       maxWidth: '100%',
       justifyContent: 'center',
-      margin: '10px',
+      margin: '3em 10px',
       maxHeight: '90vh',
       overflow: 'auto',
 

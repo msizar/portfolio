@@ -7,10 +7,16 @@ import { colors } from '../../assets/colors';
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
-    title: {
+    subTitle: {
       marginTop: 0,
       fontSize: '28px',
       textTransform: 'uppercase',
+      color: colors.white,
+    },
+
+    title: {
+      margin: 0,
+      fontSize: '3em',
       color: colors.white,
     },
 

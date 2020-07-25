@@ -34,14 +34,13 @@ const styles = makeStyles((theme: Theme) =>
     },
 
     heroNav: {
-      display: 'block',
+      display: 'flex',
       margin: '20px',
       maxWidth: '100%',
       justifyContent: 'center',
       paddingTop: '2em',
 
       [theme.breakpoints.up('md')]: {
-        display: 'flex',
         maxWidth: '70%',
         paddingTop: '4em',
       },
@@ -59,10 +58,10 @@ const styles = makeStyles((theme: Theme) =>
       // necessary for content to be below app bar
       ...theme.mixins.toolbar,
       justifyContent: 'flex-start',
-      minHeight: '50px',
+      minHeight: '20px',
 
       [theme.breakpoints.up('md')]: {
-        minHeight: '100px',
+        minHeight: '50px',
       },
     },
 
