@@ -34,7 +34,7 @@ const projects: Project[] = [
       },
       {
         site: 'website',
-        url: 'https://cape-weather.netlify.app/countries',
+        url: 'https://cape-weather.netlify.app',
       },
     ],
   },
