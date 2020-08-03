@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Routes from './routes';
 import useStyles from './AppStyles';
 import AppTheme from './components/AppTheme';
 import { Avatar } from '@material-ui/core';
-import Hero from './components/Hero';
-import { useHistory } from 'react-router-dom';
 
 function App() {
   const classes = useStyles();
-  const [activeNav, setActiveNav] = useState('/');
-  const history = useHistory();
-
-  const setActiveNavHandler = (nav: string) => {
-    setActiveNav(nav);
-    history.push(`/${nav}`);
-  };
-
-  useEffect(() => {
-    setActiveNav(window.location.pathname);
-  }, []);
 
   return (
     <div className="App">
@@ -32,12 +19,7 @@ function App() {
           </Avatar>
         }
       >
-        <Hero
-          setActiveNavHandler={setActiveNavHandler}
-          activeLink={activeNav}
-        >
-          <Routes />
-        </Hero>
+        <Routes />
       </AppTheme>
     </div>
   );

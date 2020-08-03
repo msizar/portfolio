@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Button, Link } from '@material-ui/core';
 
 import styles from './styles';
 
 type Props = {
-  children?: string;
+  children?: ReactNode;
   handleOnClick?: () => void;
   variant?: 'text' | 'outlined' | 'contained' | undefined | 'link';
   link?: any;
@@ -36,9 +36,9 @@ const Buttons = ({
           fullWidth
           variant="outlined"
           type={type}
-          href={link}
           component={component}
           disabled={disabled}
+          onClick={handleOnClick}
         >
           {children}
         </Button>

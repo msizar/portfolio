@@ -26,7 +26,6 @@ const Hero: React.FC<Props> = ({
             <Buttons
               key={link}
               active={window.location.pathname.split('/')[1] === link}
-              link={link}
               variant="outlined"
               handleOnClick={() => setActiveNavHandler(link)}
             >

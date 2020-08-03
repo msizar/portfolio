@@ -1,34 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
-import useStyles from './styles';
-import BadgeAvatars from '../../components/BadgeAvatars';
-import TypingAnimation from '../../components/TypingAnimation';
-import { SubTitle } from '../../components/Typography';
-import Socials from '../../components/Socials';
+import Hero from '../../components/Hero';
+import { ComponentRoutes } from '../../routes';
 
-type Props = {
-  title: string;
-};
+const Home: React.FC = () => {
+  const history = useHistory();
+  const [activeNav, setActiveNav] = useState('/');
 
-const Home: React.FC<Props> = ({ title }) => {
-  const classes = useStyles();
+  // if (active === `/${HOME}`) return <Home />;
+  // if (active === `/${PROFILE}`) return <Profile />;
 
-  const animateClass =
-    'animate__animated animate__zoomIn animate__slow';
+  const setActiveNavHandler = (nav: string) => {
+    setActiveNav(`/${nav}`);
+    history.push(nav);
+  };
+
+  useEffect(() => {
+    setActiveNav(window.location.pathname);
+  }, []);
 
   return (
-    <div className={classes.homeRoot}>
-      <div className={animateClass}>
-        <BadgeAvatars />
-        <div className={classes.heading}>
-          <TypingAnimation>THEMBA MSIZA</TypingAnimation>
-          <SubTitle>Software Developer</SubTitle>
-        </div>
-        <div>
-          <Socials />
-        </div>
-      </div>
-    </div>
+    <Hero
+      setActiveNavHandler={setActiveNavHandler}
+      activeLink={activeNav}
+    >
+      <ComponentRoutes active={activeNav} />
+    </Hero>
   );
 };
 

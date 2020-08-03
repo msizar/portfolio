@@ -24,6 +24,21 @@ const projects: Project[] = [
     ],
   },
   {
+    title: 'Capetown weather app',
+    stack: ['Reactjs', 'Typescript'],
+    description: 'Cape Town weather forecast app',
+    links: [
+      {
+        site: 'github',
+        url: 'https://github.com/msizar/weather-app',
+      },
+      {
+        site: 'website',
+        url: 'https://cape-weather.netlify.app/countries',
+      },
+    ],
+  },
+  {
     title: 'Unit-Converter',
     stack: ['Java', 'Spring', 'Postgresql'],
     description: 'An API to convert measurement units',
