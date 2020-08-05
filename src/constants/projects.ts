@@ -24,6 +24,17 @@ const projects: Project[] = [
     ],
   },
   {
+    title: 'Cib-landing',
+    stack: ['Angular', 'PrimeNg', 'Sass'],
+    description: 'Flight booking app close landing page',
+    links: [
+      {
+        site: 'github',
+        url: 'https://github.com/msizar/cib-landing-page',
+      },
+    ],
+  },
+  {
     title: 'Capetown weather app',
     stack: ['Reactjs', 'Typescript'],
     description: 'Cape Town weather forecast app',
@@ -68,17 +79,6 @@ const projects: Project[] = [
       {
         site: 'github',
         url: 'https://github.com/msizar/transportApi',
-      },
-    ],
-  },
-  {
-    title: 'Cib-landing',
-    stack: ['Angular', 'PrimeNg', 'Sass'],
-    description: 'Flight booking app close landing page',
-    links: [
-      {
-        site: 'github',
-        url: 'https://github.com/msizar/cib-landing-page',
       },
     ],
   },
