@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     title: 'Cib-landing',
-    stack: ['Angular', 'PrimeNg', 'Sass'],
+    stack: ['Angular', 'PrimeNg', 'Angular Material', 'Sass'],
     description: 'Flight booking app close landing page',
     links: [
       {
