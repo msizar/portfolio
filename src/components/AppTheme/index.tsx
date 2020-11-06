@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { CssBaseline } from '@material-ui/core';
 
 import useStyles from './styles';
-import AppDrawer from '../Drawer';
+import TypingAnimation from '../TypingAnimation';
 
 type Props = {
   children: any;
@@ -18,22 +18,6 @@ const AppTheme: React.FC<Props> = ({ title, logo, children }) => {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      {/* <AppBar
-        position="fixed"
-        className={clsx(classes.appBar, {
-          [classes.appBarShift]: open,
-        })}
-      >
-        <Toolbar>
-          {false && <DrawerMenu />}
-          {logo}
-          <Typography variant="h6" noWrap>
-            {title}
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
-      {/* to be used later  */}
-      {false && <AppDrawer />}{' '}
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,

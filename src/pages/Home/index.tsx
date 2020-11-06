@@ -3,13 +3,11 @@ import { useHistory } from 'react-router-dom';
 
 import Hero from '../../components/Hero';
 import { ComponentRoutes } from '../../routes';
+import { SKILLS_ICON } from '../../constants/skills';
 
 const Home: React.FC = () => {
   const history = useHistory();
   const [activeNav, setActiveNav] = useState('/');
-
-  // if (active === `/${HOME}`) return <Home />;
-  // if (active === `/${PROFILE}`) return <Profile />;
 
   const setActiveNavHandler = (nav: string) => {
     setActiveNav(`/${nav}`);
@@ -18,6 +16,10 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     setActiveNav(window.location.pathname);
+    SKILLS_ICON.forEach((src) => {
+      let image = new Image();
+      image.src = src;
+    });
   }, []);
 
   return (
