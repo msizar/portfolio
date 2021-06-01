@@ -12,14 +12,14 @@ export interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Contrace',
-    stack: ['Reactjs', 'NodeJs', 'MongoDb', 'Firebase'],
+    title: 'Durbanvill Cocktail Finder',
+    stack: ['HTML', 'SCSS', 'NPM', 'Firebase'],
     description:
-      'An Electronic Check-In App to help track the spread of corona virus',
+      'A cocktail finder app tinder like app for cocktails recipes',
     links: [
       {
         site: 'website',
-        url: 'http://contrace.online/',
+        url: 'https://cocktailfinder.durbanvillehills.co.za//',
       },
     ],
   },
