@@ -4,8 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import useStyles from './styles';
 import Buttons from '../Buttons';
 import { LINK_ARRAY } from '../../constants/links';
-import { Grid, Typography } from '@material-ui/core';
-import TypingAnimation from '../TypingAnimation';
+import { Grid } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 
 type Props = {
