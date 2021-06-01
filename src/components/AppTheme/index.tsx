@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { CssBaseline } from '@material-ui/core';
 
 import useStyles from './styles';
-import TypingAnimation from '../TypingAnimation';
 
 type Props = {
   children: any;
