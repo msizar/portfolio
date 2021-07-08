@@ -19,7 +19,7 @@ const projects: Project[] = [
     links: [
       {
         site: 'website',
-        url: 'https://cocktailfinder.durbanvillehills.co.za//',
+        url: 'https://cocktailfinder.durbanvillehills.co.za',
       },
     ],
   },
