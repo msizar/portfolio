@@ -12,7 +12,7 @@ const Skills: React.FC<Props> = () => {
 
   return (
     <div className={classes.skillRoot}>
-      <Title>My Skills</Title>
+      <Title>My skills</Title>
       <Grid className={classes.skillGrid} container spacing={2}>
         {SKILLS_ICON.map((link) => (
           <Grid

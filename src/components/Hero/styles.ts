@@ -4,7 +4,7 @@ import {
   createStyles,
 } from '@material-ui/core/styles';
 
-import image from '../../assets/images/bg.jpg';
+import image from '../../assets/images/bg.svg';
 import { colors } from '../../assets/colors';
 
 // const drawerWidth = 240;
@@ -21,7 +21,7 @@ const styles = makeStyles((theme: Theme) =>
       backgroundSize: 'cover',
       backgroundPosition: 'inherit',
       backgroundRepeat: 'no-repeat',
-
+      backgroundAttachment: 'fixed',
       padding: 0,
       transition: theme.transitions.create('margin', {
         easing: theme.transitions.easing.sharp,

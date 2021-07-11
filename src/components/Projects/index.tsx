@@ -48,7 +48,7 @@ const Projects: React.FC<Props> = () => {
 
   return (
     <div className={classes.skillRoot}>
-      <Title>My Projects</Title>
+      <Title>My projects</Title>
       <Grid className={classes.projectGrid} container spacing={2}>
         {projects.map((project: Project) => (
           <Grid
