@@ -2,7 +2,7 @@ import React from 'react';
 import useStyles from './styles';
 
 type Props = {
-  children: string;
+  children: any;
 };
 export const Title = ({ children }: Props) => {
   const classes = useStyles();
