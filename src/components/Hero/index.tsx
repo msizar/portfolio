@@ -23,7 +23,7 @@ const Hero: React.FC<Props> = ({
   console.log(history);
 
   return (
-    <div className={classes.heroRoot}>
+    <div className={`${classes.heroRoot} hero`}>
       {/* {history.location.pathname !== '/home' && (
         <div className="animate__animated animate__backInDown animate__delay-1s">
           <TypingAnimation>THEMBA MSIZA</TypingAnimation>
