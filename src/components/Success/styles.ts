@@ -61,6 +61,12 @@ const styles = makeStyles((theme: Theme) =>
       height: 38,
       width: 38,
     },
+    link: {
+      color: 'white',
+      '&:hover': {
+        textDecoration: 'none',
+      },
+    }
   }),
 );
 

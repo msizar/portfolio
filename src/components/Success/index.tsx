@@ -1,11 +1,15 @@
 import React from 'react';
 import CardContent from '@material-ui/core/CardContent';
+import { useHistory } from 'react-router-dom';
 
+import Buttons from '../Buttons';
 import useStyles from './styles';
 import { Title, Text } from '../Typography';
+import { CONTACT } from '../../constants/links';
 
 const Success: React.FC = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
     <div className={classes.successRoot}>
@@ -23,6 +27,15 @@ const Success: React.FC = () => {
               with you! 
             </Text>
           </CardContent>
+
+          <Buttons
+            variant="outlined"
+            handleOnClick={() => history.push(CONTACT)}
+          >
+            <a className={classes.link} href={CONTACT}>
+              {'＜ '}Return to form
+            </a>
+          </Buttons>
         </div>
       </div>
     </div>
