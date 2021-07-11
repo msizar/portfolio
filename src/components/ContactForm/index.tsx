@@ -17,7 +17,12 @@ const ContactForm: FC<ContactFormProps> = ({ title }) => {
   return (
     <div className={classes.contactRoot}>
       <Title>{title}</Title>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="/success"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <TextField
           id="outlined-full-width"
