@@ -15,9 +15,13 @@ const styles = makeStyles((theme: Theme) =>
     },
 
     title: {
-      margin: 0,
-      fontSize: '3em',
+      margin: '0 0 20px 0',
+      fontSize: '2em',
       color: colors.white,
+
+      [theme.breakpoints.up('md')]: {
+        fontSize: '3em',
+      },
     },
 
     heading: {

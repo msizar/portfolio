@@ -1,6 +1,5 @@
 import gitIcon from '../images/git.png';
 import linkedin from '../images/linkedin.png';
-import twitter from '../images/twitter.png';
 import bitbucket from '../images/bitbucket.png';
 
 const SOCIAL_LINKS = [
@@ -18,11 +17,6 @@ const SOCIAL_LINKS = [
     name: 'bitbucket',
     link: 'https://bitbucket.org/msizar',
     icons: bitbucket,
-  },
-  {
-    name: 'twitter',
-    link: '#',
-    icons: twitter,
   },
 ];
 

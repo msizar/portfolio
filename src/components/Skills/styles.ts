@@ -6,8 +6,6 @@ import {
 
 import { colors } from '../../assets/colors';
 
-// const drawerWidth = 240;
-
 const styles = makeStyles((theme: Theme) =>
   createStyles({
     skillRoot: {

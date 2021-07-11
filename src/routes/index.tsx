@@ -4,7 +4,14 @@ import Home from '../pages/Home';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Profile from '../pages/Profile';
-import { HOME, PROFILE, PROJECTS, SKILLS } from '../constants/links';
+import Contact from '../pages/Contact';
+import {
+  HOME,
+  PROFILE,
+  PROJECTS,
+  SKILLS,
+  CONTACT,
+} from '../constants/links';
 import Names from '../pages/Names';
 
 type Props = {
@@ -15,6 +22,7 @@ export const ComponentRoutes: React.FC<Props> = ({ active }) => {
   if (active === `/${PROJECTS}`) return <Projects />;
   if (active === `/${PROFILE}`) return <Profile />;
   if (active === `/${SKILLS}`) return <Skills />;
+  if (active === `/${CONTACT}`) return <Contact />;
   if (active === `/${HOME}`) return <Names />;
 
   return <Names />;

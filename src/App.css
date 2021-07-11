@@ -46,13 +46,35 @@
 
 /* //////////////////Form////////////////////////////////// */
 
-.MuiOutlinedInput-input,.MuiInputBase-input {
-  color: white
+.MuiFormControl-root .MuiInputBase-root {
+  color: white;
+  background: #1f172c;
 }
 
+.MuiInputBase-input {
+  background: none;
+}
 
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  color: white;
+}
 
+.MuiInputBase-root .MuiOutlinedInput-notchedOutline {
+  border-color: #6f263b;
+}
 
+.Mui-focused {
+  color: white !important;
+  border-color: white !important;
+} 
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #6f263b !important;
+}
+
+.MuiFormControl-root .MuiInputBase-root.MuiOutlinedInput-multiline textarea {
+  min-height: 100px;
+}
 
 /* //////////////////End Form////////////////////////////////// */
 

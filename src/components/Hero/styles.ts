@@ -7,8 +7,6 @@ import {
 import image from '../../assets/images/bg.svg';
 import { colors } from '../../assets/colors';
 
-// const drawerWidth = 240;
-
 const styles = makeStyles((theme: Theme) =>
   createStyles({
     heroRoot: {
