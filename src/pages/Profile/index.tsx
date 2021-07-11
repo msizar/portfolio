@@ -13,7 +13,7 @@ const Profile: React.FC = () => {
     <div className={classes.homeRoot}>
       <div className={animateClass}>
         <AboutMe title={'Profile'}>
-          I am Full-stack Developer with 2+ years of experience and a
+          Iam Full-stack Developer with 4+ years of experience and a
           BSc in Computer Science and Informatics from the University
           of Johannesburg. I am passionate about software development
           and Implementing solutions that improve the olden way of
