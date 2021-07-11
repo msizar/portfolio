@@ -10,6 +10,7 @@ const styles = makeStyles((theme: Theme) =>
   createStyles({
     contactRoot: {
       width: '90%',
+      maxWidth:'500px',
       background: colors.darkOverlay,
       margin: 'auto',
       textAlign:'center',
